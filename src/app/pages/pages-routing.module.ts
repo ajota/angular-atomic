@@ -4,12 +4,12 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: 'pocs',
-    loadChildren: () => import('./pocs/pocs.module').then((m) => m.PocsModule),
+    loadChildren: () => import('./pocs/pocs.module').then(m => m.PocsModule),
   },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [PagesRoutingModule],
+  exports: [RouterModule],
 })
 export class PagesRoutingModule {}

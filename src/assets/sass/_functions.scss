@@ -1,0 +1,11 @@
+/// convierte cantidades numericas a rem
+/// @param {*} $pixels [0]
+/// @param {*} $opts [('unit':'px','px-base':16px)]
+/// @author Anderson Velez <avelez@sistecredito.com>
+
+@function to-rem( $pixels: 0,  $opts: ( 'unit':'px', 'px-base':16px ) ) {
+  $px-base: map-get($opts, 'px-base');
+  $convertion: ( math.div(math.div(100, $px-base), 100) * $pixels ) * 1rem;
+
+  @return $convertion;
+}
