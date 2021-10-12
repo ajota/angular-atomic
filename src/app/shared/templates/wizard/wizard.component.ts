@@ -6,14 +6,10 @@ import { Component, Input, OnInit } from "@angular/core";
   styleUrls: ["./wizard.component.scss"]
 })
 export class WizardComponent implements OnInit {
-  // @Input() wizardOptions: WizardOptions;
-  // @Output() wizardOptionsChange = new EventEmitter<WizardOptions>();
   @Input() step: number;
   @Input() steps: number;
 
-  totalSteps = new Array(1);
-
-  constructor() {}
+  private totalSteps? = new Array(1);
 
   ngOnInit() {
     console.log(this.steps);

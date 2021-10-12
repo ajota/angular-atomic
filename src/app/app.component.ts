@@ -1,4 +1,8 @@
 import { Component, VERSION } from "@angular/core";
+import {
+  Wizard,
+  WizardStepsOptions
+} from "./shared/templates/wizard/wizard.model";
 
 @Component({
   selector: "app-root",
@@ -7,12 +11,12 @@ import { Component, VERSION } from "@angular/core";
 })
 export class AppComponent {
   name = "Angular " + VERSION.major;
-  wizard = {
+  wizard: Wizard = {
     step: 1,
     steps: 3
   };
 
-  step(goTo: "next" | "back" | number) {
+  step(goTo: WizardStepsOptions) {
     this.wizard.step =
       // if the step is less than the total step
       (this.wizard.step < this.wizard.steps &&
