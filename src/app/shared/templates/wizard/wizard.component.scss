@@ -1,0 +1,7 @@
+.wizard{
+  background: red;
+  
+  &__step--active{
+    background: green;
+  }
+}

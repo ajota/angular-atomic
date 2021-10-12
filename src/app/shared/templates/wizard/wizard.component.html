@@ -1,0 +1,16 @@
+<div class="wizard">
+  <div class="wizard__steps">
+    <div
+      *ngFor="let tab of totalSteps; index as i"
+      [ngClass]="{
+        'wizard__step': true,
+        'wizard__step--active': ((i+1) === step)
+      }"
+    >
+      {{i+1}}
+    </div>
+  </div>
+  <div class="wizard__body">
+    <ng-content></ng-content>
+  </div>
+</div>
