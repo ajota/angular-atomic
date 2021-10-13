@@ -3,5 +3,9 @@
   
   &__step--active{
     background: green;
+
+    &:before{
+      content: '👉';
+    }
   }
 }
