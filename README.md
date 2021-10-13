@@ -1,3 +1,3 @@
-# angular-ivy-twx3jx
+# Angular atomic
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/angular-ivy-twx3jx)
+[Edit on CodeSandbox 📦](https://codesandbox.io/s/solitary-wind-j89b2)
